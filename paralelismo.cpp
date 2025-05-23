@@ -29,8 +29,7 @@ using namespace std::chrono;
  arr: apuntador a un apuntador a un apuntador
  para el arreglo de enteros de tres dimensiones
  start: int,
- end: int,
- op: bool, true = saturar   false = desaturar
+ end: int
  */
 void setDesaturatedValues(int*** arr, int start, int end) {
     int r = 0;
