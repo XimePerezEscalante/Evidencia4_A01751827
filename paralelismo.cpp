@@ -9,6 +9,7 @@
 #include <thread>
 #include <algorithm>
 #include <fstream>
+#include <chrono>
 
 // declaracion de constantes
 
@@ -18,6 +19,8 @@
 #define W 3072
 // valores rgb
 #define Z 3
+
+using namespace std::chrono;
 
 /*
  funcion que pasa el valor a gris, utiliza el valor mas
@@ -132,6 +135,9 @@ int main(int argc, const char * argv[]) {
     //Leer los valores del archivo de la imagen original
     readPixels(res);
     
+    // contar tiempo a partir de la parte paralela
+    auto start = high_resolution_clock::now();
+    
     /* uso de 8 threads para usar la función setDesaturatedValues
      cada thread modifica 256 filas de la matriz
     */
@@ -152,6 +158,14 @@ int main(int argc, const char * argv[]) {
     s6.join();
     s7.join();
     s8.join();
+    
+    // dejar de contar el tiempo
+    auto stop = high_resolution_clock::now();
+    
+    // calcular duracion
+    auto duration = duration_cast<microseconds>(stop - start);
+    
+    std::cout << "\nTiempo: " <<  duration.count()  << std::endl;
     
     // Escribir los valores en el archivo
     writePixels(res, 0, H, MyFile);
