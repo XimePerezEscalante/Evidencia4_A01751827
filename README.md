@@ -24,22 +24,45 @@ Cada imagen se procesa dividiendo las filas entre 8 hilos:
 * Cada fila tiene `W = 3072` columnas.
 * Cada columna representa un píxel, compuesto por 3 valores: R, G, B.
 
-## En qué consiste el proyecto
-Es importante que primero se ejecute el archivo _crear_imagen.py_ y se seleccione la primer opción, ya que gracias a NumPy podemos obtener los valores de cada pixel, para posteriormente escribirlos en el archivo "pixelespy.txt". 
-Una vez terminado esto, se debe compilar y ejecutar cualquiera de los archivos de C++, donde se hace la conversión de color a blanco y negro y se escriben los valores actualizados en el archivo pixeles.txt.
-Finalmente se puede (es decisión propia) volver a ejecutar el archivo de Python, pero esta vez escogiendo la segunda opción para poder visualizar la nueva imagen editada.
+## Instrucciones de Uso
 
-En total hay 3 imágenes de las que se puede escoger:
-1. imagen1.png
-   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen1.png">
-   **Referencia:** [https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg](https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg)
-3. imagen2.png
-   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen2.png">
-   **Referencia:** [https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg](https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg)
-5. imagen3.png
-   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen3.png">
-   **Referencia:** [https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best\_pod\_landscapes.jpg](https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg)
-, pero en caso de que se quiera usar una imagen propia, se puede agregar a la carpeta y ponerle "imagen1", "imagen2" o "imagen3", procurando que su resolución es de 2048 x 3072 px. En caso de que no lo sea, se puede usar la siguiente página para cambiar el tamaño de cualquier imagen: https://imageresizer.com
+Es importante seguir el siguiente orden para ejecutar correctamente el proyecto:
+
+1. Ejecutar el archivo **`crear_imagen.py`** y seleccionar la **primera opción**.
+
+   * Esto utilizará NumPy para obtener los valores de cada píxel y los guardará en el archivo `pixelespy.txt`.
+
+2. Compilar y ejecutar uno de los programas en C++ (`paralelismo.cpp` o `secuencial.cpp`).
+
+   * Aquí se realiza la conversión a blanco y negro modificando el archivo `pixeles.txt` con los nuevos valores.
+
+3. (Opcional) Ejecutar nuevamente `crear_imagen.py`, esta vez eligiendo la **segunda opción**.
+
+   * Esto permitirá visualizar la imagen modificada en una ventana emergente.
+
+### Imágenes Disponibles
+
+En total hay 3 imágenes predeterminadas entre las que puedes elegir:
+
+1. **imagen1.png**
+   ![imagen1](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen1.png)
+   **Referencia**: (https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg)
+
+2. **imagen2.png**
+   ![imagen2](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen2.png)
+   **Referencia**: (https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg)
+
+3. **imagen3.png**
+   ![imagen3](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen3.png)
+   **Referencia**: (https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg)
+
+> También puedes usar una imagen propia.
+>
+> * Solo debes añadirla a la carpeta y renombrarla como `imagen1`, `imagen2` o `imagen3`.
+> * **Asegúrate de que tenga resolución de 2048 × 3072 px**.
+> * Si no es así, puedes cambiar su tamaño con esta herramienta: [https://imageresizer.com](https://imageresizer.com)
+
+
 ## Dependencias y Compilación
 
 ### Python
