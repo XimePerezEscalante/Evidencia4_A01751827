@@ -29,7 +29,17 @@ Es importante que primero se ejecute el archivo _crear_imagen.py_ y se seleccion
 Una vez terminado esto, se debe compilar y ejecutar cualquiera de los archivos de C++, donde se hace la conversión de color a blanco y negro y se escriben los valores actualizados en el archivo pixeles.txt.
 Finalmente se puede (es decisión propia) volver a ejecutar el archivo de Python, pero esta vez escogiendo la segunda opción para poder visualizar la nueva imagen editada.
 
-En total hay 3 imágenes de las que se puede escoger, pero en caso de que se quiera usar una imagen propia, se puede agregar a la carpeta y ponerle "imagen1", "imagen2" o "imagen3", procurando que su resolución es de 2048 x 3072 px. En caso de que no lo sea, se puede usar la siguiente página para cambiar el tamaño de cualquier imagen: https://imageresizer.com
+En total hay 3 imágenes de las que se puede escoger:
+1. imagen1.png
+   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen1.png">
+   **Referencia:** [https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg](https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg)
+3. imagen2.png
+   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen2.png">
+   **Referencia:** [https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg](https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg)
+5. imagen3.png
+   <img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen3.png">
+   **Referencia:** [https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best\_pod\_landscapes.jpg](https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg)
+, pero en caso de que se quiera usar una imagen propia, se puede agregar a la carpeta y ponerle "imagen1", "imagen2" o "imagen3", procurando que su resolución es de 2048 x 3072 px. En caso de que no lo sea, se puede usar la siguiente página para cambiar el tamaño de cualquier imagen: https://imageresizer.com
 ## Dependencias y Compilación
 
 ### Python
@@ -92,9 +102,4 @@ Los siguientes tiempos se midieron usando `std::chrono` en C++.
 
 * Ortiz, 2020. Computación paralela: [https://www.teldat.com/es/blog/computacion-paralela-capacidad-procesamiento/](https://www.teldat.com/es/blog/computacion-paralela-capacidad-procesamiento/)
 * GeeksforGeeks, 2025. Threads en sistemas operativos: [https://www-geeksforgeeks-org.translate.goog/threads-and-its-types-in-operating-system](https://www-geeksforgeeks-org.translate.goog/threads-and-its-types-in-operating-system)
-* Imágenes utilizadas:
-
-  * [https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg](https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg)
-  * [https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg](https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg)
-  * [https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best\_pod\_landscapes.jpg](https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg)
 
