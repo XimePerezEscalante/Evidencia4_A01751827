@@ -24,6 +24,12 @@ Cada imagen se procesa dividiendo las filas entre 8 hilos:
 * Cada fila tiene `W = 3072` columnas.
 * Cada columna representa un píxel, compuesto por 3 valores: R, G, B.
 
+## En qué consiste el proyecto
+Es importante que primero se ejecute el archivo _crear_imagen.py_ y se seleccione la primer opción, ya que gracias a NumPy podemos obtener los valores de cada pixel, para posteriormente escribirlos en el archivo "pixelespy.txt". 
+Una vez terminado esto, se debe compilar y ejecutar cualquiera de los archivos de C++, donde se hace la conversión de color a blanco y negro y se escriben los valores actualizados en el archivo pixeles.txt.
+Finalmente se puede (es decisión propia) volver a ejecutar el archivo de Python, pero esta vez escogiendo la segunda opción para poder visualizar la nueva imagen editada.
+
+En total hay 3 imágenes de las que se puede escoger, pero en caso de que se quiera usar una imagen propia, se puede agregar a la carpeta y ponerle "imagen1", "imagen2" o "imagen3", procurando que su resolución es de 2048 x 3072 px. En caso de que no lo sea, se puede usar la siguiente página para cambiar el tamaño de cualquier imagen: https://imageresizer.com
 ## Dependencias y Compilación
 
 ### Python
@@ -32,7 +38,7 @@ Cada imagen se procesa dividiendo las filas entre 8 hilos:
 * **Ejecución**:
 
 ```bash
-python3 paint_image.py
+python3 crear_imagen.py
 ```
 _Nota: puede que el programa tarde en ejecutarse por el tiempo que le toma escribir los valores RGB de cada píxel en el archivo pixelespy.txt_
 ### C++
