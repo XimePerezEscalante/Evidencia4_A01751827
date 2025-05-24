@@ -34,7 +34,7 @@ Cada imagen se procesa dividiendo las filas entre 8 hilos:
 ```bash
 python3 paint_image.py
 ```
-
+_Nota: puede que el programa tarde en ejecutarse por el tiempo que le toma escribir los valores RGB de cada píxel en el archivo pixelespy.txt_
 ### C++
 
 * **Librerías**: `chrono`, `algorithm`, `thread`, `fstream`
