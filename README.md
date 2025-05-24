@@ -111,13 +111,15 @@ La función central `setDesaturatedValues` tiene esta complejidad:
 
 ## Resultados de Pruebas
 
-Los siguientes tiempos se midieron usando `std::chrono` en C++.
+Los siguientes tiempos se midieron usando `std::chrono` en C++:
 
 | Imagen | Paralelismo (ms) | Secuencial (ms) |
 | ------ | ---------------- | --------------- |
 | 1      | 16885            | 70250           |
 | 2      | 27329            | 84292           |
 | 3      | 22311            | 86541           |
+
+_Las fotos de los resultados están en la carpeta tests._
 
 **Conclusión**: el uso de hilos mejora notablemente el rendimiento.
 
