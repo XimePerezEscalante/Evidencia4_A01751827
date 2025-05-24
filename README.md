@@ -46,19 +46,19 @@ En total hay 3 imágenes predeterminadas entre las que puedes elegir:
 
 1. **imagen1.png**
    ![imagen1](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen1.png)
-   **Referencia**: (https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg)
+   **Referencia**: https://i.natgeofe.com/n/f2199174-f2d1-4ac8-9e53-cb484073868a/athabasca-river-jasper-national-park.jpg
 
 2. **imagen2.png**
    ![imagen2](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen2.png)
-   **Referencia**: (https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg)
+   **Referencia**: https://i.natgeofe.com/n/f7facfef-285c-4171-b58a-3c4653d11872/2019-travel-photo-contest-epic-landscapes035.jpg
 
 3. **imagen3.png**
    ![imagen3](https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/imagen3.png)
-   **Referencia**: (https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg)
+   **Referencia**: https://i.natgeofe.com/n/375cf222-3c35-439d-82c4-acc392297812/05-best_pod_landscapes.jpg
 
 > También puedes usar una imagen propia.
 >
-> * Solo debes añadirla a la carpeta y renombrarla como `imagen1`, `imagen2` o `imagen3`.
+> * Sólo debes añadirla a la carpeta y renombrarla como `imagen1`, `imagen2` o `imagen3` (borra la original del nombre que escojas).
 > * **Asegúrate de que tenga resolución de 2048 × 3072 px**.
 > * Si no es así, puedes cambiar su tamaño con esta herramienta: [https://imageresizer.com](https://imageresizer.com)
 
