@@ -16,7 +16,7 @@ Un **hilo** es una unidad de ejecución independiente dentro de un programa. Usa
 
 ## Diagrama de Ejecución Paralela
 
-> (Añadir una imagen representativa del reparto de hilos si se desea ilustrar el comportamiento de los 8 hilos dividiendo `H` en bloques)
+<img src="https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/diagrama.jpg">
 
 Cada imagen se procesa dividiendo las filas entre 8 hilos:
 
