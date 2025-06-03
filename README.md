@@ -121,6 +121,33 @@ Los siguientes tiempos se midieron usando `std::chrono` en C++:
 
 _Las fotos de los resultados están en la carpeta tests._
 
+## ¿Esta fue una buena solución?
+
+Para comprobar que mi solución fue efectiva, especialmente por el número de threads que escogí (8), decidí volver a realizar pruebas pero únicamente con 4 threads, es decir, la mitad de los que se usaron originalmente. Los cuales trabajarían así:
+
+
+
+El código quedó de la siguiente manera:
+```C++
+std::thread s1(setDesaturatedValues, std::ref(res), 0, H/4);
+std::thread s2(setDesaturatedValues, std::ref(res), H/4, H/2);
+std::thread s3(setDesaturatedValues, std::ref(res), H/2, (H/4) * 3);
+std::thread s4(setDesaturatedValues, std::ref(res), (H/4) * 3, H);
+    
+s1.join();
+s2.join();
+s3.join();
+s4.join();
+```
+
+### Resultado de las pruebas
+
+| Imagen | Paralelismo 4 threads (ms) | 
+| ------ | ---------------- |
+| 1      | 21317            | 
+| 2      | 26430            | 
+| 3      | 27533            |
+
 **Conclusión**: el uso de hilos mejora notablemente el rendimiento.
 
 ## Referencias
