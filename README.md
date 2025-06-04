@@ -103,11 +103,15 @@ La función central `setDesaturatedValues` tiene esta complejidad:
 * **Tiempo paralelo ideal (8 hilos)**: `O((H × W)/8)`
 * **Espacio**: `O(H × W × 3)` (cada píxel tiene 3 valores)
 
-### Ejemplo:
+### Es decir:
 
 * Si `H = 2048` y `W = 3072`, entonces `H × W = 6291456` iteraciones
 * Tiempo en secuencial: `O(6291456)`
 * Tiempo en paralelo ideal: `O(786432)`
+
+**¿Por qué?**
+
+Porque la función usa un ciclo for para revisar cada píxel y esto sólo lo hace una única vez, así que por eso únicamente se multiplican las dimensiones del problema (matriz de 2048 x 3072 x 3)
 
 ## Resultados de Pruebas
 
@@ -148,7 +152,14 @@ s4.join();
 | 2      | 26430            | 
 | 3      | 27533            |
 
-**Conclusión**: el uso de hilos mejora notablemente el rendimiento.
+**Conclusión**
+
+A partir de las pruebas se comprobó que usar paralelismo redujo el tiempo de ejecución de la función que desaturaba cada pixel. En cuanto al uso de 8 vs 4 threads, se notó un menor tiempo para 2 de las 3 pruebas con aproximadamente 5000 milisegundos. La comparación de tiempo y espacio es la siguiente:
+
+* Tiempo en paralelo ideal (8 threads): `O((H × W)/8)` = **786432**
+* Tiempo en paralelo ideal (4 threads): `O((H × W)/4)` = **1572864**
+
+8 threads lo reduce a la mitad, pero de igual manera debe tomarse en cuenta el tiempo necesario para la creación de cada thread, así que es más tardado crear 8 threads, que 4.
 
 ## Referencias
 
