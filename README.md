@@ -152,7 +152,7 @@ s4.join();
 | 2      | 26430            | 
 | 3      | 27533            |
 
-**Conclusión**
+## Conclusión
 
 A partir de las pruebas se comprobó que usar paralelismo redujo el tiempo de ejecución de la función que desaturaba cada pixel. En cuanto al uso de 8 vs 4 threads, se notó un menor tiempo para 2 de las 3 pruebas con aproximadamente 5000 milisegundos. La comparación de tiempo y espacio es la siguiente:
 
