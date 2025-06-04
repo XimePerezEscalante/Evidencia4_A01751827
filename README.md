@@ -125,7 +125,7 @@ _Las fotos de los resultados están en la carpeta tests._
 
 Para comprobar que mi solución fue efectiva, especialmente por el número de threads que escogí (8), decidí volver a realizar pruebas pero únicamente con 4 threads, es decir, la mitad de los que se usaron originalmente. Los cuales trabajarían así:
 
-
+https://github.com/XimePerezEscalante/Evidencia4_A01751827/blob/main/Diagrama4Threads.png?raw=true
 
 El código quedó de la siguiente manera:
 ```C++
