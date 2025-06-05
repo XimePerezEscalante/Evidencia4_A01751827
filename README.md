@@ -101,7 +101,9 @@ La función central `setDesaturatedValues` tiene esta complejidad:
 
 * **Tiempo secuencial**: `O(H × W)`
 * **Tiempo paralelo ideal (8 hilos)**: `O((H × W)/8)`
-* **Espacio**: `O(H × W × 3)` (cada píxel tiene 3 valores)
+* **Espacio**:
+  * _Secuencial:_ `O(H × W × 3)` (cada píxel tiene 3 valores).
+  * _Paralelismo:_ `O(H × W × 3 + 8)` (+8 es por el número de threads).
 
 ### Es decir:
 
@@ -158,6 +160,9 @@ A partir de las pruebas se comprobó que usar paralelismo redujo el tiempo de ej
 
 * Tiempo en paralelo ideal (8 threads): `O((H × W)/8)` = **O(786432)**
 * Tiempo en paralelo ideal (4 threads): `O((H × W)/4)` = **O(1572864)**
+
+* Espacio en paralelo con 8 threads: `O(H × W × 3 + 8)` = **O(18874376)**
+* Espacio en paralelo con 4 threads: `O(H × W × 3 + 4)` = **O(18874372)**
 
 8 threads lo reduce a la mitad, pero de igual manera debe tomarse en cuenta el tiempo necesario para la creación de cada thread, así que es más tardado crear 8 threads, que 4.
 
